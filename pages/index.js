@@ -1,7 +1,8 @@
 import Image from "next/image";
 // import { Inter } from "next/font/google";
 
-import { ButtonPrimary, ButtonPrimaryOutline } from "./components/Button";
+import ButtonPrimary from "./components/ButtonPrimary";
+import ButtonPrimaryOutline from "./components/ButtonPrimaryOutline";
 
 // const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
