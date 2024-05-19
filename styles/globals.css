@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #0C0C0C;
+}
+
+.bg-hero {
+    background-image: url('/images/bg-hero.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-gradient-text-primary {
+    position: relative;
+}
+
+.text-gradient-text-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, #FCE5A2 #FCE5A2 0%, #F3B101 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
