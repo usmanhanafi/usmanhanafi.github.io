@@ -153,8 +153,8 @@ export default function Home() {
         <h2 className="lg:text-[56px] text-primary font-bold text-center">Skills</h2>
         <h3 className="lg:text-[36px] text-primary font-bold text-center mt-10 mb-5">Design Tools I Use</h3>
         <div className="flex flex-wrap gap-4 justify-center items-center">
-          <BadgeIcon>figma</BadgeIcon>
-          <BadgeIcon>adobe xd</BadgeIcon>
+          <BadgeIcon icon='figma'>figma</BadgeIcon>
+          <BadgeIcon icon='adobe-xd'>adobe xd</BadgeIcon>
 
         </div>
         <h3 className="lg:text-[36px] text-primary font-bold text-center mt-10 mb-5">Techologies I Use</h3>
@@ -165,12 +165,12 @@ export default function Home() {
           <BadgeIcon>jquery</BadgeIcon>
           <BadgeIcon icon='react'>react js</BadgeIcon>
           <BadgeIcon icon='react'>react native</BadgeIcon>
-          <BadgeIcon >react query</BadgeIcon>
+          <BadgeIcon icon='react-query'>react query</BadgeIcon>
           <BadgeIcon icon='nextjs'>next js</BadgeIcon>
           <BadgeIcon>firebase</BadgeIcon>
           <BadgeIcon>SCSS</BadgeIcon>
           <BadgeIcon>bootstrap</BadgeIcon>
-          <BadgeIcon >styled component</BadgeIcon>
+          <BadgeIcon icon-='styled-component'>styled component</BadgeIcon>
           <BadgeIcon icon='tailwindcss'>tailwind CSS</BadgeIcon>
           <BadgeIcon >material ui</BadgeIcon>
           <BadgeIcon icon='chakraui'>chakra ui</BadgeIcon>
