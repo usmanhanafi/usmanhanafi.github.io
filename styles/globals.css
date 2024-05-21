@@ -12,6 +12,14 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+@media only screen and (max-width: 800px){
+    .bg-hero {
+        background-image: url('/images/bg-hero.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
 
 .text-gradient-text-primary {
     position: relative;

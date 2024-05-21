@@ -1,6 +1,6 @@
-const ButtonPrimaryOutline = ({ children, ...props }) => {
+const ButtonPrimaryOutline = ({ children, color, ...props }) => {
     return (
-        <div className='cursor-pointer text-md lg:text-xl text-primary bg-primary/10 border border-primary px-8 py-3 rounded-full hover:bg-primary hover:text-text-primary' {...props}>{children}</div>
+        <div className={`${color ? 'border-white/60 text-white hover:bg-secondary hover:text-text-white bg-secondary/30' : 'border-primary text-primary hover:bg-primary hover:text-text-primary bg-primary/10'} cursor-pointer text-md lg:text-xl border  px-8 py-3 rounded-full`} {...props}>{children}</div>
     )
 }
 
