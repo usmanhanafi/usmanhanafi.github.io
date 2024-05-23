@@ -6,6 +6,7 @@ import ButtonPrimaryOutline from "./components/ButtonPrimaryOutline";
 import BadgeIcon from "./components/BadgeIcon";
 import CardExperience from "./components/CardExperience";
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 // const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
@@ -30,8 +31,12 @@ export default function Home() {
             <p className="text-white font-semibold lg:text-xl xl:text-2xl mt-4">A FullStack Developer | Project Manager</p>
             <p className="text-white lg:text-xl xl:text-xl font-regular mt-3">With <span className="text-primary font-semibold bg-secondary-light px-3 py-1 rounded-full">2+ Years</span> Experience</p>
             <div className="flex gap-4 items-center justify-center mt-10 mb-[20vh] md:mb-0 ">
-              <ButtonPrimaryOutline>Resume</ButtonPrimaryOutline>
-              <ButtonPrimary>Hire Me</ButtonPrimary>
+              <Link href='/docs/resume-tholib-usman-hanafi.pdf' download="resume-tholib-usman-hanafi.pdf" target="_blank">
+                <ButtonPrimaryOutline>Resume</ButtonPrimaryOutline>
+              </Link>
+              <Link href='mailto:usmanhanafit@gmail.com'>
+                <ButtonPrimary>Hire Me</ButtonPrimary>
+              </Link>
             </div>
             <div className="absolute bottom-0 right-0 left-0 hidden md:block">
               <Image
@@ -94,7 +99,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-secondary-light rounded-2xl lg:rounded-[3rem] p-4 lg:p-10 text-center mt-4 md:mt-8 w-full">
-          <p className="txt-md lg:text-lg xl:text-xl text-white/80">I am a seasoned <strong>Fullstack Developer with over 2 years</strong> of experience, initially in UI/UX design during a 4-month internship. After completing my SMK, I worked as a Frontend Developer at a Yogyakarta software house. Currently pursuing further education, I engage in freelance projects, showcasing my proficiency as a Fullstack Developer. I specialize in React.js and have a proven track record in developing responsive web applications. My diverse skills, ranging from UI/UX to Fullstack development, make me a dynamic and adaptable professional <strong>ready to contribute to challenging projects</strong>.
+          <p className="txt-md lg:text-lg xl:text-xl text-white/80">I am a seasoned <strong>Fullstack Developer with over 2 years</strong> of experience, initially in UI/UX design during a 4-month internship. After completing my SMK, I worked as a Frontend Developer at a Yogyakarta software house. Currently pursuing further education, I engage in freelance projects, showcasing my proficiency as a Fullstack Developer. I specialize in React.js and have a proven track record in developing responsive web applications. My diverse skills, ranging from UI/UX to Fullstack development, make me a dynamic and adaptable professional <strong>ready to contribute to challenging projects</strong> <br /><strong>I am particularly interested in the field of technology</strong>, especially software development. <strong>My goal is to become a software engineer at a top company</strong>, where I can leverage my skills and experience to contribute to innovative and impactful projects..
           </p>
         </div>
         <div className="flex justify-center my-3 md:my-10"><ButtonPrimaryOutline>Contact Me</ButtonPrimaryOutline></div>
@@ -113,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id='Experience' className="container mx-auto p-4 my-10 md:my-20">
+      <section id='experience' className="container mx-auto p-4 my-10 md:my-20">
         <h2 className="lg:text-[56px] text-primary font-bold text-center">Experience</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 md:gap-4 mt-5">
           <CardExperience
@@ -185,7 +190,7 @@ export default function Home() {
       <section id='projects' className="my-10 container mx-auto p-4">
         <h2 className="lg:text-[56px] text-primary font-bold text-center">Projects I've Worked On</h2>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mt-5 md:mt-10">
-          <div className="bg-white/20 p-4 rounded-3xl flex flex-col items-start">
+          <div className="bg-white/10 p-4 rounded-3xl flex flex-col items-start">
             <Image
               className="rounded-3xl bg-black"
               src="/images/laundry.png"
@@ -198,8 +203,8 @@ export default function Home() {
             <h3 className="lg:text-3xl text-white font-bold mt-3 md:mt-5">Laundry Ecosystem</h3>
             <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Worked on</p>
             <div className="flex gap-4 items-center">
-              <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium">2+ Website</p></div>
-              <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium">2+ Application</p></div>
+              <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium"> Website</p></div>
+              <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium"> Application</p></div>
             </div>
             <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Techologies I have used</p>
             <div className="flex gap-3 items-center flex-wrap mb-5">
@@ -213,38 +218,66 @@ export default function Home() {
               <BadgeIcon icon='tailwindcss' size='small' className='opacity-90'>tailwind css</BadgeIcon>
               <BadgeIcon icon='nextjs' size='small' className='opacity-90'>next js</BadgeIcon>
             </div>
-            <Link href='/'>
+            <Link className="self-end mt-3 md:mt-5" href='/'>
               <ButtonPrimaryOutline color='white'>Go to Laundryan</ButtonPrimaryOutline>
             </Link>
           </div>
           <div>
-            <div className="flex gap-4 flex-col md:flex-row bg-white/20 p-4 rounded-3xl">
+            <div className="flex gap-4 flex-col md:flex-row bg-white/10 p-4 rounded-3xl">
               <Image
-                className="rounded-3xl w-[100%] bg-black"
-                src="/images/bg-hero.png"
+                className="rounded-3xl h-full w-full md:h-[45%] md:w-[45%]"
+                src="/images/avantinemua.png"
                 alt="portfolio-images"
-                width={0}
-                height={0}
-                objectFit="cover"
+                width={300}
+                height={300}
+                objectFit="contain"
               />
-              <div>
-                <h3 className="lg:text-3xl text-white font-bold mt-3 md:mt-5">Laundry Ecosystem</h3>
-                <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Worked on</p>
-                <div className="flex gap-4 items-center">
-                  <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium">2+ Website</p></div>
-                  <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium">2+ Application</p></div>
+              <div className="flex flex-col w-full justify-between">
+                <div>
+                  <h3 className="lg:text-3xl text-white font-bold mt-3 md:mt-5">AVANTINE MUA</h3>
+                  <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Worked on</p>
+                  <div className="flex gap-4 items-center">
+                    <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium">Website</p></div>
+                  </div>
+                  <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Techologies I have used</p>
+                  <div className="flex gap-3 items-center flex-wrap mb-5">
+                    <BadgeIcon className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>html</BadgeIcon>
+                    <BadgeIcon className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>css</BadgeIcon>
+                    <BadgeIcon icon='js' className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>javascript</BadgeIcon>
+                  </div>
                 </div>
-                <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Techologies I have used</p>
-                <div className="flex gap-3 items-center flex-wrap mb-5">
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
-                  <BadgeIcon icon='js' className='opacity-90 mx-[-20px] my-[-8px] font-semibold scale-75'>javascript</BadgeIcon>
+                <Link href='https://awantinamua.com/' target="_blank" className="self-end">
+                  <ButtonPrimaryOutline color='white'>Go To Avantinemua</ButtonPrimaryOutline>
+                </Link>
+              </div>
+            </div>
+            <div className="flex gap-4 flex-col md:flex-row bg-white/10 p-4 rounded-3xl mt-4">
+              <Image
+                className="rounded-3xl h-full w-full md:h-[45%] md:w-[45%]"
+                src="/images/diwebin.png"
+                alt="portfolio-images"
+                width={300}
+                height={300}
+                objectFit="contain"
+              />
+              <div className="flex flex-col w-full justify-between">
+                <div>
+                  <h3 className="lg:text-3xl text-white font-bold mt-3 md:mt-5">DIWEBIN Website Builder</h3>
+                  <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Worked on</p>
+                  <div className="flex gap-4 items-center">
+                    <div className="px-4 py-2 bg-white/15 rounded-full"><p className="text-white font-medium">Website</p></div>
+                  </div>
+                  <p className="text-white/80 text-md font-medium mt-3 md:mt-5 mb-3">Techologies I have used</p>
+                  <div className="flex gap-3 items-center flex-wrap mb-5">
+                    <BadgeIcon className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>html</BadgeIcon>
+                    <BadgeIcon className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>css</BadgeIcon>
+                    <BadgeIcon icon='js' className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>javascript</BadgeIcon>
+                    <BadgeIcon className='opacity-90 mx-[-12px] my-[-4px] font-semibold scale-75'>jquery</BadgeIcon>
+                  </div>
                 </div>
-                <ButtonPrimaryOutline color='white'>Go to Laundryan</ButtonPrimaryOutline>
+                <Link href='https://diwebin.com/' target="_blank" className="self-end">
+                  <ButtonPrimaryOutline color='white'>Go To Diwebin</ButtonPrimaryOutline>
+                </Link>
               </div>
             </div>
 
