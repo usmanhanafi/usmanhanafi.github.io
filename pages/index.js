@@ -52,7 +52,6 @@ export default function Home() {
           </div>
           <div className="absolute bottom-0 right-0 left-0  md:hidden">
             <Image
-              className="sm:px-16"
               src="/images/my-short-profile-mobile.png"
               alt="tholib-usman-hanafi-profile"
               layout="responsive"
