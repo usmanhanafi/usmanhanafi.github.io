@@ -139,7 +139,7 @@ export default function Home() {
             image='istana-mesin-laundry'
             place='PT Istana Mesin Laundry'
             address='Seyegan, Sleman, Yogyakarta.'
-            date='2021-2023 (12 month)'
+            date='2021-2024 (4 Years)'
             job_title='Fullstack Developer'
             description="I contributed significantly to PT Istana Mesin Laundry by developing a cashier application and integrating it with IoT-enabled laundry machines. This collaborative software streamlined operations, enhancing the overall efficiency of the laundry management ecosystem."
           />

@@ -22,12 +22,6 @@ module.exports = {
           primary: '#111827',
           secondary: '#6b7280',
         },
-        gradient: `linear-gradient(135deg, #FCE5A2 #FCE5A2 0%, #F3B101 100%)`,
-      },
-      backgroundImage: {
-        "gradient-text-primary": `linear-gradient(135deg, #FCE5A2 #FCE5A2 0%, #F3B101 100%)`,
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
