@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    function onChangeWindow(){
+    function onChangeWindow() {
         setIsOpen(!isOpen)
     }
     return (
@@ -26,7 +26,7 @@ const Navbar = () => {
                     </Link>
                     <div className='flex md:hidden'>
                         {!isOpen ? (
-                            <button onClick={()=>onChangeWindow()} className='px-3' >
+                            <button onClick={() => onChangeWindow()} className='px-3' >
                                 <Image
                                     src="/images/icon-bar.svg"
                                     alt="logo-usmanhanafi"
@@ -36,7 +36,7 @@ const Navbar = () => {
                                 />
                             </button>
                         ) : (
-                            <button onClick={()=>onChangeWindow()} className='px-3 py-3' >
+                            <button onClick={() => onChangeWindow()} className='px-3 py-3' >
                                 <Image
                                     src="/images/icon-times.svg"
                                     alt="logo-usmanhanafi"
@@ -49,10 +49,10 @@ const Navbar = () => {
                     </div>
                 </div>
                 <ul className={`gap-3 ${isOpen ? 'flex flex-col mt-5' : 'hidden'} md:flex`}>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link href='#about'><p>about</p></Link></li>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link href='#skills'><p>skills</p></Link></li>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link href='#experience'><p>experience</p></Link></li>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link href='#projects'><p>projects</p></Link></li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#about'><p>about</p></Link></li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#skills'><p>skills</p></Link></li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#experience'><p>experiences</p></Link></li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#projects'><p>projects</p></Link></li>
                 </ul>
             </div>
         </nav>

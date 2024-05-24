@@ -10,7 +10,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
-    <main className={`${className.inter}`}>
+    <main className={`${inter.className}`}>
       <div className="z-[-1] h-[100vh] absolute">
         <Image
           className="h-full w-full"
@@ -97,10 +97,10 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-secondary-light rounded-2xl lg:rounded-[3rem] p-4 lg:p-10 text-center mt-4 md:mt-8 w-full">
-          <p className="txt-md lg:text-lg xl:text-xl text-white/80">I am a seasoned <strong>Fullstack Developer with over 2 years</strong> of experience, initially in UI/UX design during a 4-month internship. After completing my SMK, I worked as a Frontend Developer at a Yogyakarta software house. Currently pursuing further education, I engage in freelance projects, showcasing my proficiency as a Fullstack Developer. I specialize in React.js and have a proven track record in developing responsive web applications. My diverse skills, ranging from UI/UX to Fullstack development, make me a dynamic and adaptable professional <strong>ready to contribute to challenging projects</strong> <br /><strong>I am particularly interested in the field of technology</strong>, especially software development. <strong>My goal is to become a software engineer at a top company</strong>, where I can leverage my skills and experience to contribute to innovative and impactful projects..
+          <p className="txt-md lg:text-lg xl:text-xl text-white/80">I am a seasoned <strong>Fullstack Developer with over 2 years</strong> of experience, initially in UI/UX design during a 4-month internship. After completing my SMK, I worked as a Frontend Developer at a Yogyakarta software house. Currently pursuing further education, I engage in freelance projects, showcasing my proficiency as a Fullstack Developer. I specialize in React.js and have a proven track record in developing responsive web applications. My diverse skills, ranging from UI/UX to Fullstack development, make me a dynamic and adaptable professional <strong>ready to contribute to challenging projects.</strong> <br /><strong>I am particularly interested in the field of technology</strong>, especially software development. <strong>My goal is to become a software engineer at a top company</strong>, where I can leverage my skills and experience to contribute to innovative and impactful projects.
           </p>
         </div>
-        <div className="flex justify-center my-3 md:my-10"><ButtonPrimaryOutline>Contact Me</ButtonPrimaryOutline></div>
+        <Link href='tel:0895421900858' className="flex justify-center my-3 md:my-10"><ButtonPrimaryOutline>Contact Me</ButtonPrimaryOutline></Link>
       </section>
       <section id='education' className="container mx-auto p-4 my-10 md:my-20">
         <h2 className="lg:text-[56px] text-primary font-bold text-center">Education</h2>
