@@ -1,17 +1,16 @@
 import Image from "next/image";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import ButtonPrimary from "./components/ButtonPrimary";
 import ButtonPrimaryOutline from "./components/ButtonPrimaryOutline";
 import BadgeIcon from "./components/BadgeIcon";
 import CardExperience from "./components/CardExperience";
 import Link from "next/link";
-import Navbar from "./components/Navbar";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
-    <main className="">
+    <main className={`${className.inter}`}>
       <div className="z-[-1] h-[100vh] absolute">
         <Image
           className="h-full w-full"
@@ -118,7 +117,7 @@ export default function Home() {
         </div>
       </section>
       <section id='experience' className="container mx-auto p-4 my-10 md:my-20">
-        <h2 className="lg:text-[56px] text-primary font-bold text-center">Experience</h2>
+        <h2 className="lg:text-[56px] text-primary font-bold text-center">Experiences</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 md:gap-4 mt-5">
           <CardExperience
             image='solusi247'
@@ -217,8 +216,8 @@ export default function Home() {
               <BadgeIcon icon='tailwindcss' size='small' className='opacity-90'>tailwind css</BadgeIcon>
               <BadgeIcon icon='nextjs' size='small' className='opacity-90'>next js</BadgeIcon>
             </div>
-            <Link className="self-end mt-3 md:mt-5" href='/'>
-              <ButtonPrimaryOutline color='white'>Go to Laundryan</ButtonPrimaryOutline>
+            <Link className="self-end mt-3 md:mt-5" href='/project/laundry'>
+              <ButtonPrimaryOutline color='white'>Go to Laundry</ButtonPrimaryOutline>
             </Link>
           </div>
           <div>
@@ -246,7 +245,8 @@ export default function Home() {
                   </div>
                 </div>
                 <Link href='https://awantinamua.com/' target="_blank" className="self-end">
-                  <ButtonPrimaryOutline color='white'>Go To Avantinemua</ButtonPrimaryOutline>
+                  <ButtonPrimaryOutline color='white'>Go To 
+                  Avantinemua</ButtonPrimaryOutline>
                 </Link>
               </div>
             </div>
