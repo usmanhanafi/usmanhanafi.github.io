@@ -49,10 +49,22 @@ const Navbar = () => {
                     </div>
                 </div>
                 <ul className={`gap-3 ${isOpen ? 'flex flex-col mt-5' : 'hidden'} md:flex`}>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#about'><p>about</p></Link></li>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#skills'><p>skills</p></Link></li>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#experience'><p>experiences</p></Link></li>
-                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'><Link onClick={() => onChangeWindow()} href='/#projects'><p>projects</p></Link></li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'>
+                        <Link className='md:flex hidden' href='/#about'><p>about</p></Link>
+                        <Link className='flex md:hidden' onClick={() => onChangeWindow()} href='/#about'><p>about</p></Link>
+                    </li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'>
+                        <Link className='md:flex hidden' href='/#skills'><p>skills</p></Link>
+                        <Link className='flex md:hidden' onClick={() => onChangeWindow()} href='/#skills'><p>skills</p></Link>
+                    </li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'>
+                        <Link className='md:flex hidden' href='/#experience'><p>experiences</p></Link>
+                        <Link className='flex md:hidden' onClick={() => onChangeWindow()} href='/#experience'><p>experiences</p></Link>
+                    </li>
+                    <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'>
+                        <Link className='md:flex hidden' href='/#projects'><p>projects</p></Link>
+                        <Link className='flex md:hidden' onClick={() => onChangeWindow()} href='/#projects'><p>projects</p></Link>
+                    </li>
                 </ul>
             </div>
         </nav>
