@@ -48,7 +48,7 @@ const Navbar = () => {
                         )}
                     </div>
                 </div>
-                <ul className={`gap-3 ${isOpen ? 'flex flex-col mt-5' : 'hidden'} md:flex`}>
+                <ul className={`gap-3 ${isOpen ? 'flex flex-col mt-5 md:flex-row md:mt-0' : 'hidden'} md:flex`}>
                     <li className='px-4 py-2 font-semibold capitalize hover:bg-secondary/30 rounded-full'>
                         <Link className='md:flex hidden' href='/#about'><p>about</p></Link>
                         <Link className='flex md:hidden' onClick={() => onChangeWindow()} href='/#about'><p>about</p></Link>
